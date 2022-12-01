@@ -1,6 +1,7 @@
 if not game:IsLoaded() then
 	game.Loaded:wait() 
 end
+
 local library = {}
 local request = request or http_request or (identifyexecutor() == "Synapse X" and syn.request) or (http and http.request)
 loadstring(request({Url="https://raw.githubusercontent.com/cypherdh/Script-Library/main/InstanceProtect",Method="GET"}).Body)()
@@ -67,7 +68,7 @@ function library:CreateWindow(name, version, icon)
 	MainTitle.Position = UDim2.new(0, 30, 0, 1)
 	MainTitle.Size = UDim2.new(1, -30, 1, 0)
 	MainTitle.Font = Enum.Font.Gotham
-	MainTitle.Text = name.." | "..version
+	MainTitle.Text = name.." | "..version --"Title | Version"
 	MainTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 	MainTitle.TextSize = 12.000
 	MainTitle.TextXAlignment = Enum.TextXAlignment.Left
@@ -103,7 +104,7 @@ function library:CreateWindow(name, version, icon)
 	Close.Position = UDim2.new(0.953333378, 0, 0.0666666627, 0)
 	Close.Size = UDim2.new(0, 25, 0, 25)
 	Close.ZIndex = 2
-	Close.Image = "rbxassetid://11713669618"
+	Close.Image = "rbxassetid://3926305904"
 	Close.ImageRectOffset = Vector2.new(284, 4)
 	Close.ImageRectSize = Vector2.new(24, 24)
 
@@ -113,7 +114,7 @@ function library:CreateWindow(name, version, icon)
 	Minimize.BackgroundTransparency = 1.000
 	Minimize.Position = UDim2.new(0.953, -24, -0.2, 6)
 	Minimize.Size = UDim2.new(0, 26, 0, 30)
-	Minimize.Image = "http://www.roblox.com/asset/?id=11713663889"
+	Minimize.Image = "http://www.roblox.com/asset/?id=6035067836"
 
 	_4pxShadow2px_2.Name = "4pxShadow(2px)"
 	_4pxShadow2px_2.Parent = Window
@@ -122,7 +123,7 @@ function library:CreateWindow(name, version, icon)
 	_4pxShadow2px_2.Position = UDim2.new(0, -15, 0, -15)
 	_4pxShadow2px_2.Selectable = true
 	_4pxShadow2px_2.Size = UDim2.new(1, 30, 1, 30)
-	_4pxShadow2px_2.Image = "http://www.roblox.com/asset/?id=11713657782"
+	_4pxShadow2px_2.Image = "http://www.roblox.com/asset/?id=5761504593"
 	_4pxShadow2px_2.ImageColor3 = Color3.fromRGB(49, 49, 59)
 	_4pxShadow2px_2.ImageTransparency = 0.300
 	_4pxShadow2px_2.ScaleType = Enum.ScaleType.Slice
@@ -1743,6 +1744,3 @@ function library:CreateWindow(name, version, icon)
 end
 
 return library
-
-
--- 255, 255, 255
