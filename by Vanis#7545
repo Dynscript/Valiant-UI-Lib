@@ -21,7 +21,7 @@ function library:CreateWindow(name, version, icon)
 	local UIGradient = Instance.new("UIGradient")
 	local Bar = Instance.new("Frame")
 	local Bar_2 = Instance.new("Frame")
-	local Close = Instance.new("ImageButton")
+	local Close = Instance.new("TextButton")
 	local Minimize = Instance.new("ImageButton")
 	local _4pxShadow2px_2 = Instance.new("ImageLabel")
 
@@ -103,10 +103,8 @@ function library:CreateWindow(name, version, icon)
 	Close.BackgroundTransparency = 1.000
 	Close.Position = UDim2.new(0.953333378, 0, 0.0666666627, 0)
 	Close.Size = UDim2.new(0, 25, 0, 25)
-	Close.ZIndex = 2
-	Close.Image = "rbxassetid://9545003274"
-	Close.ImageRectOffset = Vector2.new(284, 4)
-	Close.ImageRectSize = Vector2.new(24, 24)
+	Close.ZIndex = 10
+    Close.Text = "x"
 
 	Minimize.Name = "Minimize"
 	Minimize.Parent = TitleBar
