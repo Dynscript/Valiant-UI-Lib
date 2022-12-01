@@ -104,7 +104,7 @@ function library:CreateWindow(name, version, icon)
 	Close.Position = UDim2.new(0.953333378, 0, 0.0666666627, 0)
 	Close.Size = UDim2.new(0, 25, 0, 25)
 	Close.ZIndex = 2
-	Close.Image = "rbxassetid://11713846941"
+	Close.Image = "rbxassetid://9545003274"
 	Close.ImageRectOffset = Vector2.new(284, 4)
 	Close.ImageRectSize = Vector2.new(24, 24)
 
