@@ -105,6 +105,8 @@ function library:CreateWindow(name, version, icon)
 	Close.Size = UDim2.new(0, 25, 0, 25)
 	Close.ZIndex = 10
     Close.Text = "x"
+    Close.TextSize = 14
+    Close.TextColor3 = Color3.fromRGB(255, 255, 255)
 
 	Minimize.Name = "Minimize"
 	Minimize.Parent = TitleBar
